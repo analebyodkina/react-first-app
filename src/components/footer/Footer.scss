@@ -1,5 +1,8 @@
 @import  'src/scss/vars.scss';
 @import 'src/scss/mixins.scss';
 .copyright {    
-      @include text ($ff, 16px, 20px, 400, $color-accent);      
+      @include text ($ff, 16px, 20px, 400, $color-accent);
+      @include tablet-992 {
+        display: none;            
+    }       
 }

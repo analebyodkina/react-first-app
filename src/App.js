@@ -3,6 +3,7 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 
 import mainLogo from './assets/bg-image.png'
+import GoogleIcon from '../src/components/icons/GoogleIcon';
 
 function App() {
   return (
@@ -36,8 +37,13 @@ function App() {
                  
                 
               </form>
+              <a href="#" className="login__google">
+                <GoogleIcon />
+                <span>Sign in with Google</span>
+              </a>
+              <div className="login__sign-up">Don’t have an account? <span>Sign up</span>
+              </div>
             </div>
-
             <Footer />
           </div>
           <div className="image">
