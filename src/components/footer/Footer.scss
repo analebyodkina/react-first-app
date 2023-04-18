@@ -1,9 +1,5 @@
-@import 'src/scss/_vars';
-
-.footer {
-    font-size: 50px;
-    color: $color-primary;
-}
-h2 {
-   
+@import  'src/scss/vars.scss';
+@import 'src/scss/mixins.scss';
+.copyright {    
+      @include text ($ff, 16px, 20px, 400, $color-accent);      
 }

@@ -1,11 +1,12 @@
+import LogoIcon from '../icons/LogoIcon';
 import './Header.scss';
 
 function Header() {
   return (
-    <>
-      <h2>Header works!</h2>
-      
-    </>
+    <div className='logo'>      
+      <LogoIcon />
+      <div className='logo__text'>PNFT Market</div>
+    </div>
    
   )
 }

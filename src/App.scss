@@ -10,8 +10,7 @@
     justify-content: center;
     align-items: center;
 }
-.wrapper {
-    
+.wrapper {    
     height: 960px;
     padding: 32px 32px 32px 40px;
     background: #FCFDFF;
@@ -20,6 +19,10 @@
     box-shadow: 0 1px 10px #949393;
     display: grid;
     grid-template-columns: 640px auto;
+}
+.login {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 .image {
     width: 768px;

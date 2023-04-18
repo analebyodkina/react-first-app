@@ -10,6 +10,8 @@ function App() {
       <div className='wrapper'>
           <div className="login">
             <Header />
+            <div className="login__form"></div>
+
             <Footer />
           </div>
           <div className="image">
