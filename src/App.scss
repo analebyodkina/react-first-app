@@ -47,6 +47,8 @@
         @include text ($ff, 16px, 24px, 400, $color-accent);
         margin-bottom: 56px;
     }
+}
+.form{
     &__field {
         display: flex;
         flex-direction: column;
@@ -54,19 +56,44 @@
         max-width: 360px;
         margin-bottom: 20px;
     }
-    &__field_title{
+    &__title{
         @include text ($ff, 14px, 20px, 500, $color-secondary);        
     }
-    &__field_input {
+    &__input {
         border: 1px solid #D0D5DD;
         border-radius: 8px;
         outline: 0;
         padding: 10px 14px;
+        cursor: pointer;
         @include text ($ff, 16px, 24px, 400, $color-secondary); 
         &::placeholder {
             @include text ($ff, 16px, 24px, 400, $color-accent); 
+        }        
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    a{
+        @include text ($ff, 14px, 20px, 500, $color-primary); 
+        &:hover {
+            text-decoration: underline;
         }
-        
+    }
+    &__checkbox {
+        margin-right: 8px;
+    }
+    &__submit {
+        @include text ($ff, 16px, 20px, 500, $color-white);
+        padding: 12px 0; 
+        background: $color-primary;
+        border-radius: 8px;
+        width: 100%;
+        border: 0;
+        outline: 0;
+        margin-top: 32px;
+        cursor: pointer;
     }
 }
 

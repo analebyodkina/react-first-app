@@ -3,6 +3,8 @@
 .logo {
     display: flex;
     gap: 14px;
+    align-items: center;
+    cursor: pointer;
     &__text {
         @include text ($ff, 16px, 19px, 700, $color-black);
         letter-spacing: 0.01em;

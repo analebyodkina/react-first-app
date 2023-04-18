@@ -14,22 +14,26 @@ function App() {
               <h1 className="login__title">NFT Access</h1>
               <div className="login__desc">Please fill your detail to access your account.</div>
 
-              <form action="get">
+              <form action="get" className='form'>
 
-                <label className="login__field">
-                  <span className="login__field_title">Email</span>
-                  <input type="email" className="login__field_input" placeholder='debra.holt@example.com'/>
+                <label className="form__field">
+                  <span className="form__title">Email</span>
+                  <input type="email" className="form__input" placeholder='debra.holt@example.com'/>
                 </label>
 
-                <label class="login__field">
-                  <span className="field__title">Password</span>
-                  <input type="password" className="login__field_input" placeholder="••••••••" />
+                <label class="form__field">
+                  <span className="form__title">Password</span>
+                  <input type="password" className="form__input" placeholder="••••••••" />
                 </label>  
-                <label className="remember">                
-                    <input type="checkbox" />
-                    <span>Remember me</span>
-                    
-                </label>  
+                <div className="form__row">
+                  <label>                
+                      <input type="checkbox" className='form__checkbox' />
+                      <span className="form__title">Remember me</span>                    
+                  </label> 
+                  <a href="#">Forgot Password?</a> 
+                </div>
+                <input type="submit" className="form__submit" value="Sign in" />
+                 
                 
               </form>
             </div>
