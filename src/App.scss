@@ -1,0 +1,29 @@
+@import 'src/scss/vars.scss';
+@import 'src/scss/mixins.scss';
+@import 'src/scss/normalize.scss';
+@import 'src/scss/base.scss';
+
+#root {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    
+    height: 960px;
+    padding: 32px 32px 32px 40px;
+    background: #FCFDFF;
+    border-radius: 44px;
+    margin-inline: auto;
+    box-shadow: 0 1px 10px #949393;
+    display: grid;
+    grid-template-columns: 640px auto;
+}
+.image {
+    width: 768px;
+    height: 896px;
+    background: $color-bg;
+    border-radius: 40px;
+}
