@@ -20,13 +20,54 @@
     display: grid;
     grid-template-columns: 640px auto;
 }
-.login {
+.container {
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
 .image {
-    width: 768px;
+    
     height: 896px;
     background: $color-bg;
     border-radius: 40px;
 }
+.login {
+    max-width: 500px;
+    padding: 0 70px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__title {
+        @include text ($ff, 40px, 48px, 700, $color-secondary); 
+        letter-spacing: 0.01em;
+        text-transform: capitalize;
+        margin-bottom: 8px;
+    }
+    &__desc {
+        @include text ($ff, 16px, 24px, 400, $color-accent);
+        margin-bottom: 56px;
+    }
+    &__field {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        max-width: 360px;
+        margin-bottom: 20px;
+    }
+    &__field_title{
+        @include text ($ff, 14px, 20px, 500, $color-secondary);        
+    }
+    &__field_input {
+        border: 1px solid #D0D5DD;
+        border-radius: 8px;
+        outline: 0;
+        padding: 10px 14px;
+        @include text ($ff, 16px, 24px, 400, $color-secondary); 
+        &::placeholder {
+            @include text ($ff, 16px, 24px, 400, $color-accent); 
+        }
+        
+    }
+}
+
+

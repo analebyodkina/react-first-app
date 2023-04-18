@@ -8,9 +8,31 @@ function App() {
   return (
     <div>
       <div className='wrapper'>
-          <div className="login">
+          <div className="container">
             <Header />
-            <div className="login__form"></div>
+            <div className="login">
+              <h1 className="login__title">NFT Access</h1>
+              <div className="login__desc">Please fill your detail to access your account.</div>
+
+              <form action="get">
+
+                <label className="login__field">
+                  <span className="login__field_title">Email</span>
+                  <input type="email" className="login__field_input" placeholder='debra.holt@example.com'/>
+                </label>
+
+                <label class="login__field">
+                  <span className="field__title">Password</span>
+                  <input type="password" className="login__field_input" placeholder="••••••••" />
+                </label>  
+                <label className="remember">                
+                    <input type="checkbox" />
+                    <span>Remember me</span>
+                    
+                </label>  
+                
+              </form>
+            </div>
 
             <Footer />
           </div>
