@@ -83,10 +83,7 @@
         &:hover {
             text-decoration: underline;
         }
-    }
-    &__checkbox {
-        margin-right: 8px;
-    }
+    }    
     &__submit {
         @include text ($ff, 16px, 20px, 500, $color-white);
         padding: 12px 0; 

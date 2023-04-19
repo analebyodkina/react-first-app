@@ -1,4 +1,5 @@
 
+import Checkbox from '../UI/Checkbox/Checkbox';
 import Input from '../UI/Input/Input';
 import GoogleIcon from '../icons/GoogleIcon';
 import './Login.scss';
@@ -12,18 +13,11 @@ function Login() {
 
               <form action="get" className='form'>
 
-                <Input title="Emai" placeholder="debra.holt@example.com" type="email"/>
-                <Input title="Password" placeholder="••••••••" type="password"/>
-
-                {/* <label class="form__field">
-                  <span className="form__title">Password</span>
-                  <input type="password" className="form__input" placeholder="••••••••" />
-                </label>   */}
+                <Input title="Email" placeholder="debra.holt@example.com" type="email"/>
+                <Input title="Password" placeholder="••••••••" type="password"/>                
+                
                 <div className="form__row">
-                  <label>                
-                      <input type="checkbox" className='form__checkbox' />
-                      <span className="form__title">Remember me</span>                    
-                  </label> 
+                  <Checkbox title="Remember me" />
                   <a href="/">Forgot Password?</a> 
                 </div>
                 <input type="submit" className="form__submit" value="Sign in" />
