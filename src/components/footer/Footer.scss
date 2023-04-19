@@ -2,6 +2,7 @@
 @import 'src/scss/mixins.scss';
 .copyright {    
       @include text ($ff, 16px, 20px, 400, $color-accent);
+      font-style: italic;
       @include tablet-992 {
         display: none;            
     }       

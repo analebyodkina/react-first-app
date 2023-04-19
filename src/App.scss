@@ -25,6 +25,7 @@
     @include tablet-992 {
         grid-template-columns: 1fr;
         padding: 0px 24px;
+        height: 100%;
     }
     
 }
