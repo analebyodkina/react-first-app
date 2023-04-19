@@ -11,9 +11,9 @@ function Login() {
               <h1 className="login__title">NFT Access</h1>              
               <div className="login__desc">Please fill your detail to access your account.</div>
 
-              <form action="get" className='form'>
-
-                <Input title="Email" placeholder="debra.holt@example.com" type="email"/>
+              <form action="get" className='form'>   
+                
+                <Input title="Email" placeholder="debra.holt@example.com" type="email"/>                
                 <Input title="Password" placeholder="••••••••" type="password"/>                
                 
                 <div className="form__row">

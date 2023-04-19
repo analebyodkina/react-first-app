@@ -1,4 +1,3 @@
-
 import CheckIcon from "../../icons/CheckIcon";
 import "./Checkbox.scss";
 

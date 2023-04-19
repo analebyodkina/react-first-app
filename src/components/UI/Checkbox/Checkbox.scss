@@ -16,10 +16,11 @@
         align-items: center; 
         justify-content: center;
         svg {
-            width: 16px;
-            height: 16px;
+            width: 18px;
+            height: 18px;
             opacity: 0;  
-            transition: .3s all ease-in-out;          
+            transition: .3s all ease-in-out; 
+            fill: $color-secondary;         
         }     
     }
     &__input {
