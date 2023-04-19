@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import HideIcon from '../../icons/HideIcon';
 import './Input.scss';
 
 
@@ -20,7 +19,7 @@ function Input(props) {
         <span className="form__title">{props.title}</span>
         <input type={passwordType} className="form__input" placeholder={props.placeholder}/>
         <span onClick={togglePassword}>
-          <HideIcon />
+          {props.icon}
         </span>
         
     </label>
