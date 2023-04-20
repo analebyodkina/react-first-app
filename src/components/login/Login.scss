@@ -56,22 +56,26 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 32px;
     }
     a{
         @include text ($ff, 14px, 20px, 500, $color-primary); 
         &:hover {
             text-decoration: underline;
         }
-    }    
-    &__submit {
-        @include text ($ff, 16px, 20px, 500, $color-white);
-        padding: 12px 0; 
-        background: $color-primary;
-        border-radius: 8px;
-        width: 100%;
-        border: 0;
-        outline: 0;
-        margin-top: 32px;
-        cursor: pointer;
     }
+}
+._secondary {
+    background: transparent;
+    border: 1px solid #D0D5DD;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9.5px;
+    padding: 11.5px 0; 
+    .btn__text {
+        @include text ($ff, 16px, 20px, 500, $color-secondary);
+    }
+     
 }
