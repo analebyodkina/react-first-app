@@ -37,13 +37,10 @@ function Login() {
           <Button type="submit" title="Sign in"></Button>
           
         </form>
-        <Button  title="Sign in with Google" addClass="_secondary" icon={<GoogleIcon />}>
+        <Button linkTo="/" title="Sign in with Google" addClass="_secondary" icon={<GoogleIcon />}>
         
         </Button>
-        {/* <a href="/" className="login__google">
-          <GoogleIcon />
-          <span>Sign in with Google</span>
-        </a> */}
+        
         <div className="login__sign-up">
           Don’t have an account?{" "}
           <span>
