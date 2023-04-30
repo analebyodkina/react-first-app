@@ -32,7 +32,7 @@ function Input(props) {
               className="form__input" 
               placeholder={props.placeholder}
             />
-            <span onClick={togglePassword}>
+            <span className='form__icon' onClick={togglePassword}>
               {props.icon}
             </span>
           </>          
@@ -47,7 +47,7 @@ function Input(props) {
               className="form__input" 
               placeholder={props.placeholder}
             />
-            <span onClick={handleClearClick}>
+            <span className='form__icon' onClick={handleClearClick}>
                 {props.icon}
             </span>
           </>          
